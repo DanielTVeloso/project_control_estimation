@@ -1,0 +1,12 @@
+#title {
+    text-align: center;
+}
+
+.endpoint {
+    background-color: #e0dfdf !important;
+}
+
+pre {
+    background-color: white;
+    padding: 1em;
+}

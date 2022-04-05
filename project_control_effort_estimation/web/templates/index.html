@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='/css/style.css'>
+        <link rel='stylesheet' href='/css/bootstrap.min.css'>
+        <title>Scraim Effort Estimation Module API Documentation</title>
+    </head>
+    <body>
+        <h1 id='title'>Scraim Effort Estimation Module API Documentation</h1>
+        
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <div class='card card-body endpoint' id='newTask' role='alert'>
+                        <p><strong>Endpoint:</strong> New Task</p>
+                        <p><strong>HTTP Method:</strong> POST</p>
+                        <p><strong>Path:</strong> /new-task</p>
+                        <p><strong>Description:</strong> Predict the estimated time or effort of news tasks.</p>
+                        <p><strong>Request Body (example):</strong>
+                            <pre>[{
+                                "task_number" : 4,
+                                "eftm": 0,
+                                "rdm" : 2,
+                                "p_type" : 7,
+                                "department" : 0,
+                                "business_subfield": 0,
+                                "priority" : 2,
+                                "b_funds" : 748512.06,
+                                "apn": 0,
+                                "b_duration" : 36,
+                                "b_cost_type" : 0,
+                                "wp_number" : 2,
+                                "wp_type" : 0,
+                                "wp_duration": 36,
+                                "labels" : "Literature",
+                                "model" : "xboost"
+                                },
+                                {
+                                "task_number" : 8,
+                                "eftm": 0,
+                                "rdm" : 3,
+                                "p_type" : 2,
+                                "department" : 0,
+                                "business_subfield": 0,
+                                "priority" : 0,
+                                "b_funds" : 0,
+                                "apn": 0,
+                                "b_duration" : 26,
+                                "b_cost_type" : 0,
+                                "wp_number" : 3,
+                                "wp_type" : 0,
+                                "wp_duration": 23,
+                                "labels" : "Others",
+                                "model" : "random_forest"
+                                }
+                     ]
+                 </pre>
+                        </p>
+                        <p><strong>Response (example):</strong>
+                            <pre>[
+                                {
+                                    '1 - result': 5.9852996
+                                }, 
+                                {
+                                    '2 - result': 4.076666666666667
+                                }
+                            ]</pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

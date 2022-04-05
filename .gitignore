@@ -1,0 +1,52 @@
+# Data folder
+./project_control_effort_estimation/data/*.csv
+*.csv 
+*.xlsx
+*.pdf
+
+
+#env
+venv/*
+launch_venv.txt
+
+#heavy models
+project_control_effort_estimation/storage/models/project_control_extratrees_trained.joblib
+project_control_effort_estimation/storage/models/project_control_gbm_trained.joblib
+project_control_effort_estimation/storage/models/project_control_random_forest_trained.joblib
+project_control_effort_estimation/storage/models/project_control_svr_trained.joblib
+
+project_control_effort_estimation/storage/Scripts do SQL Server1/
+project_control_effort_estimation/storage/projctrl_12_12_2020.sql
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+.idea
+.vscode/*
